@@ -1,18 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Orderbook object
-Author: Blake LeBaron
-Date: June 2016
-Orderbook is a single instance of this object
-
-Order book is implmented in a discretized fixed price range
-Orders are linked lists of (quant, time) data pairs at each price
-This allows for generalized order sizes, and keeps track of entry time on
-the book.
-
-Book is initialized with orders near one discrete tick off mid price
-"""
-
 import numpy as np
 
 class orderBook:
@@ -161,15 +146,3 @@ class orderBook:
             if(self.asks[i] != []):
                 print(self.realPrice(i),self.asks[i])
     
-    
-    
-                
-            
-                
-            
-        
-        
-        
-        
-        
-            
